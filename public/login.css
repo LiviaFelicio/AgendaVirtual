@@ -1,0 +1,137 @@
+body, h1, p, form, input, button, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #d32f2f;
+    padding: 35px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    height: 70px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section, .login-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section {
+    background-color: #f5f5f5;
+    color: #d32f2f;
+    text-align: center;
+}
+
+.text-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.login-section {
+    background-color: #f5f5f5;
+    color: #d32f2f;
+}
+
+.login-section form {
+    background-color: #f5f5f5;
+    color: #d32f2f;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.login-section input {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.login-section button {
+    width: 100%;
+    padding: 15px;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.login-section button:hover {
+    background-color: #b71c1c;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #d32f2f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+

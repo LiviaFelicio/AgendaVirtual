@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar Tarefa</title>
+    <link rel="stylesheet" href="./turmas.css">
+    <link rel="stylesheet" href="./publicar.css"> 
+</head>
+<body>
+    <header>
+        <img src="./logo2.jfif" alt="Logo" class="logo">
+        </header>
+    <main>
+        <div class="form-section">
+            <h1>Publicar Atividades</h1>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="materia">Matéria:</label>
+                    <input type="text" id="materia" name="materia" required>
+                </div>
+                <div class="form-group">
+                    <label for="conteudo">Conteúdo:</label>
+                    <textarea id="conteudo" name="conteudo" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="detalhes">Detalhes:</label>
+                    <textarea id="detalhes" name="detalhes" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="arquivo">Adicionar Arquivo:</label>
+                    <input type="file" id="arquivo" name="arquivo">
+                </div>
+                <button type="submit" class="submit-button">Adicionar Atividade</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Agenda Virtual
+    </footer>
+</body>
+</html>

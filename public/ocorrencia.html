@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Ocorrências</title>
+    <link rel="stylesheet" href="./ocorrencia.css"> 
+    <script src="ocorrencias.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./logo2.jfif" alt="Logo" class="logo">
+    </header>
+    <main>
+        <section class="title-section">
+            <h1>Lista de Ocorrências</h1>
+        </section>
+        <section class="list-section">
+            <form id="ocorrencia-form">
+                <div class="task-selection">
+                    <label for="task-select">Selecionar Tarefa:</label>
+                    <select id="task-select" name="task" required>
+                        <option value="">Selecione uma tarefa</option>
+                        <option value="Tarefa 1">Tarefa 1</option>
+                        <option value="Tarefa 2">Tarefa 2</option>
+                        <option value="Tarefa 3">Tarefa 3</option>
+                    </select>
+                </div>
+                <div class="list-header">
+                    <span class="list-header-item left">Nome do Aluno</span>
+                    <span class="list-header-item right">Ocorrência</span>
+                </div>
+                <div class="student-list">
+                    <label for="ana-beatriz-silva">Ana Beatriz Silva
+                        <input type="checkbox" id="ana-beatriz-silva" name="student" value="Ana Beatriz Silva" class="checkbox">
+                    </label>
+                    <label for="bruno-santos-oliveira">Bruno Santos Oliveira
+                        <input type="checkbox" id="bruno-santos-oliveira" name="student" value="Bruno Santos Oliveira" class="checkbox">
+                    </label>
+                    <label for="carla-rodrigues-lima">Carla Rodrigues Lima
+                        <input type="checkbox" id="carla-rodrigues-lima" name="student" value="Carla Rodrigues Lima" class="checkbox">
+                    </label>
+                    <label for="daniel-costa-souza">Daniel Costa Souza
+                        <input type="checkbox" id="daniel-costa-souza" name="student" value="Daniel Costa Souza" class="checkbox">
+                    </label>
+                    <label for="erika-martins-pereira">Erika Martins Pereira
+                        <input type="checkbox" id="erika-martins-pereira" name="student" value="Erika Martins Pereira" class="checkbox">
+                    </label>
+                    <label for="felipe-almeida-silva">Felipe Almeida da Silva
+                        <input type="checkbox" id="felipe-almeida-silva" name="student" value="Felipe Almeida da Silva" class="checkbox">
+                    </label>
+                    <label for="gabriela-fernandes-costa">Gabriela Fernandes Costa
+                        <input type="checkbox" id="gabriela-fernandes-costa" name="student" value="Gabriela Fernandes Costa" class="checkbox">
+                    </label>
+                    <label for="henrique-oliveira-santos">Henrique Oliveira Santos
+                        <input type="checkbox" id="henrique-oliveira-santos" name="student" value="Henrique Oliveira Santos" class="checkbox">
+                    </label>
+                    <label for="isabela-ferreira-lima">Isabela Ferreira Lima
+                        <input type="checkbox" id="isabela-ferreira-lima" name="student" value="Isabela Ferreira Lima" class="checkbox">
+                    </label>
+                    <label for="joao-pedro-costa">João Pedro Costa
+                        <input type="checkbox" id="joao-pedro-costa" name="student" value="João Pedro Costa" class="checkbox">
+                    </label>
+                    <label for="karla-nascimento-silva">Karla Nascimento Silva
+                        <input type="checkbox" id="karla-nascimento-silva" name="student" value="Karla Nascimento Silva" class="checkbox">
+                    </label>
+                    <label for="lucas-mendes-pereira">Lucas Mendes Pereira
+                        <input type="checkbox" id="lucas-mendes-pereira" name="student" value="Lucas Mendes Pereira" class="checkbox">
+                    </label>
+                    <label for="mariana-rocha-da-silva">Mariana Rocha da Silva
+                        <input type="checkbox" id="mariana-rocha-da-silva" name="student" value="Mariana Rocha da Silva" class="checkbox">
+                    </label>
+                    <label for="natalia-carvalho-souza">Natália Carvalho Souza
+                        <input type="checkbox" id="natalia-carvalho-souza" name="student" value="Natália Carvalho Souza" class="checkbox">
+                    </label>
+                    <label for="otavio-lima-ferreira">Otávio Lima Ferreira
+                        <input type="checkbox" id="otavio-lima-ferreira" name="student" value="Otávio Lima Ferreira" class="checkbox">
+                    </label>
+                    <label for="patricia-almeida-costa">Patricia Almeida Costa
+                        <input type="checkbox" id="patricia-almeida-costa" name="student" value="Patricia Almeida Costa" class="checkbox">
+                    </label>
+                    <label for="rafael-souza-martins">Rafael Souza Martins
+                        <input type="checkbox" id="rafael-souza-martins" name="student" value="Rafael Souza Martins" class="checkbox">
+                    </label>
+                    <label for="sabrina-oliveira-santos">Sabrina Oliveira Santos
+                        <input type="checkbox" id="sabrina-oliveira-santos" name="student" value="Sabrina Oliveira Santos" class="checkbox">
+                    </label>
+                    <label for="tiago-ferreira-lima">Tiago Ferreira Lima
+                        <input type="checkbox" id="tiago-ferreira-lima" name="student" value="Tiago Ferreira Lima" class="checkbox">
+                    </label>
+                    <label for="uilson-da-silva-rocha">Uilson da Silva Rocha
+                        <input type="checkbox" id="uilson-da-silva-rocha" name="student" value="Uilson da Silva Rocha" class="checkbox">
+                    </label>
+                    <label for="vanessa-rodrigues-souza">Vanessa Rodrigues Souza
+                        <input type="checkbox" id="vanessa-rodrigues-souza" name="student" value="Vanessa Rodrigues Souza" class="checkbox">
+                    </label>
+                    <label for="wesley-oliveira-lima">Wesley Oliveira Lima
+                        <input type="checkbox" id="wesley-oliveira-lima" name="student" value="Wesley Oliveira Lima" class="checkbox">
+                    </label>
+                    <label for="xuxa-carvalho-silva">Xuxa Carvalho Silva
+                        <input type="checkbox" id="xuxa-carvalho-silva" name="student" value="Xuxa Carvalho Silva" class="checkbox">
+                    </label>
+                    <label for="yasmin-costa-martins">Yasmin Costa Martins
+                        <input type="checkbox" id="yasmin-costa-martins" name="student" value="Yasmin Costa Martins" class="checkbox">
+                    </label>
+                    <label for="zachary-almeida-santos">Zachary Almeida Santos
+                        <input type="checkbox" id="zachary-almeida-santos" name="student" value="Zachary Almeida Santos" class="checkbox">
+                    </label>
+                    <label for="amanda-freitas-da-silva">Amanda Freitas da Silva
+                        <input type="checkbox" id="amanda-freitas-da-silva" name="student" value="Amanda Freitas da Silva" class="checkbox">
+                    </label>
+                    <label for="bruno-henrique-costa">Bruno Henrique Costa
+                        <input type="checkbox" id="bruno-henrique-costa" name="student" value="Bruno Henrique Costa" class="checkbox">
+                    </label>
+                    <label for="claudia-silva-pereira">Cláudia Silva Pereira
+                        <input type="checkbox" id="claudia-silva-pereira" name="student" value="Cláudia Silva Pereira" class="checkbox">
+                    </label>
+                    <label for="diego-alves-da-costa">Diego Alves da Costa
+                        <input type="checkbox" id="diego-alves-da-costa" name="student" value="Diego Alves da Costa" class="checkbox">
+                    </label>
+                    <label for="elaine-rodrigues-lima">Elaine Rodrigues Lima
+                        <input type="checkbox" id="elaine-rodrigues-lima" name="student" value="Elaine Rodrigues Lima" class="checkbox">
+                    </label>
+                </div>
+                <div class="button-container">
+                    <button type="button" id="send-button">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Agenda Virtual</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
