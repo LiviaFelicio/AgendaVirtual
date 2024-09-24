@@ -1,0 +1,11 @@
+Instruções para rodar o projeto:
+
+1-entre no link do Git Hub e faça o download de todos os arquivos presentes
+2-É necessario que você tenha o aplicativo node.js( caso não tenha instale em seu computador)
+3- abra a pasta "Projeto_final" (que você fez o download anteriormente) no Vs Code 
+4- Abra o Prompt de Comando e digite os seguintes comandos 1 por vez
+	1. npm instal
+	2. node server.js
+	3. copie o link gerado pelo código 
+	4. copie e cole no google e em seguida coloque "/login" em sequência sem espaço (EX: http://localhost:3000/login)
+5-Explore o aplicativo e um pouco da sua funcionalidade

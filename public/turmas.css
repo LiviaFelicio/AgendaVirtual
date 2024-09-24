@@ -98,6 +98,7 @@ main {
 .turma {
     font-size: 1.5em;
     margin-bottom: 10px;
+    text-decoration: none;
 }
 
 .acessar {
@@ -112,7 +113,9 @@ footer {
     padding: 10px;
     margin-top: auto;
 }
-
+a{
+    text-decoration: none;
+}
 
 
 
