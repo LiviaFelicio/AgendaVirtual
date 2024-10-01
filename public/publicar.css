@@ -32,13 +32,19 @@ header {
 .form-section {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     padding: 20px;
-    margin: 0 auto;
-    max-width: 90vw;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px; /* Ajuste a largura conforme necessário */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px; /* Adiciona padding interno */
+    text-align: center; /* Centraliza o texto dentro da seção */
 }
 
 .form-section h1 {
@@ -95,6 +101,7 @@ footer {
     padding: 10px;
     margin-top: auto;
 }
+
 
 
 

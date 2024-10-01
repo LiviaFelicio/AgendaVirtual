@@ -17,7 +17,12 @@ document.getElementById('send-button').addEventListener('click', function() {
                     students: selectedStudents
                 })
             })
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro na resposta da rede.');
+                }
+                return response.text();
+            })
             .then(data => {
                 alert(data);
             })
@@ -30,6 +35,7 @@ document.getElementById('send-button').addEventListener('click', function() {
         alert('Nenhum aluno selecionado.');
     }
 });
+
 
 
 

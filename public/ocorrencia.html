@@ -21,10 +21,8 @@
                     <label for="task-select">Selecionar Tarefa:</label>
                     <select id="task-select" name="task" required>
                         <option value="">Selecione uma tarefa</option>
-                        <option value="Tarefa 1">Tarefa 1</option>
-                        <option value="Tarefa 2">Tarefa 2</option>
-                        <option value="Tarefa 3">Tarefa 3</option>
                     </select>
+                    <p id="task-date"></p> <!-- Parágrafo para a data -->
                 </div>
                 <div class="list-header">
                     <span class="list-header-item left">Nome do Aluno</span>
@@ -115,12 +113,6 @@
                     <label for="claudia-silva-pereira">Cláudia Silva Pereira
                         <input type="checkbox" id="claudia-silva-pereira" name="student" value="Cláudia Silva Pereira" class="checkbox">
                     </label>
-                    <label for="diego-alves-da-costa">Diego Alves da Costa
-                        <input type="checkbox" id="diego-alves-da-costa" name="student" value="Diego Alves da Costa" class="checkbox">
-                    </label>
-                    <label for="elaine-rodrigues-lima">Elaine Rodrigues Lima
-                        <input type="checkbox" id="elaine-rodrigues-lima" name="student" value="Elaine Rodrigues Lima" class="checkbox">
-                    </label>
                 </div>
                 <div class="button-container">
                     <button type="button" id="send-button">Enviar</button>
@@ -131,8 +123,44 @@
     <footer>
         <p>&copy; 2024 Agenda Virtual</p>
     </footer>
+    <script>
+        // Função para buscar tarefas
+        async function loadTarefas() {
+            try {
+                const response = await fetch('/tarefas');
+                const tarefas = await response.json();
+                const taskSelect = document.getElementById('task-select');
+                const taskDate = document.getElementById('task-date');
+
+                tarefas.forEach(tarefa => {
+                    const option = document.createElement('option');
+                    option.value = tarefa.id_tarefa;
+                    option.textContent = `Tarefa ${tarefa.id_tarefa}`; // Exibe apenas o ID da tarefa
+                    taskSelect.appendChild(option);
+                });
+
+                // Adiciona o evento de mudança para exibir a data de entrega
+                taskSelect.addEventListener('change', () => {
+                    const selectedTask = tarefas.find(t => t.id_tarefa == taskSelect.value);
+                    taskDate.textContent = selectedTask ? `Data de Entrega: ${new Date(selectedTask.data_entrega).toLocaleDateString('pt-BR')}` : '';
+                });
+            } catch (error) {
+                console.error('Erro ao carregar as tarefas:', error);
+            }
+        }
+
+        // Carrega as tarefas ao abrir a página
+        document.addEventListener('DOMContentLoaded', loadTarefas);
+    </script>
 </body>
 </html>
+
+
+    
+
+
+
+
 
 
 
